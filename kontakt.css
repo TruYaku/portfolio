@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    font-family: "Hanken Grotesk", serif;
+    text-align: center;
+    padding: auto;
+    background: linear-gradient(to bottom right, rgb(23, 57, 43), rgb(7, 93, 55),  rgb(7, 93, 55), rgb(30, 46, 41), rgb(30, 46, 41));
+    min-height: 100vh;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    
+
+}
+
+
+
+footer{
+    text-align: center;
+    border-radius: 8px;
+    border: 1px solid rgb(7, 93, 55);
+    background-color: rgb(19, 68, 47);
+    font-size: x-small;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    
+}
+
+header{
+    grid-column: 4 / 5;
+    grid-row: 1 ;
+}
+
+.dropbtn {
+    background-color: #333333c4;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1;}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color: #0e3b10;
+  }
+
+/* DESKTOP VERZIA CSS */
+@media only screen and (min-width: 600px){
+}
+
+main{
+  margin-left: 650px;
+  margin-top: 50px;
+  width: 600px;
+}
+
+/* Sekcia Kontakt - aby bola na stránke vidieť */
+#kontakt {
+    padding: 40px 20px; /* Okolo sekcie vzduch */
+    background-color: rgb(19, 68, 47); /* Jemné šedé pozadie */
+    text-align: center; /* Text v strede */
+    border-radius: 15px;
+}
+
+#kontakt h2 {
+    color: #ffffff; /* Tmavý nadpis */
+    margin-bottom: 15px; /* Miesto pod nadpisom */
+}
+
+#kontakt p {
+    color: #ffffff; /* Sivý text */
+    margin-bottom: 25px; /* Miesto pod textom */
+}
+
+/* Samotný formulár - ako krabička */
+.kontaktny-formular {
+    max-width: 450px; /* Šírka krabičky */
+    margin: 0 auto; /* Krabička v strede */
+    padding: 20px; /* Vnútri krabičky vzduch */
+    background-color: rgb(7, 93, 55); /* Biele pozadie krabičky */
+    border-radius: 8px; /* Zaoblené rohy */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Jemný tieň */
+    display: flex; /* Aby sa prvky usporiadali pod seba */
+    flex-direction: column; /* Usporadúvanie pod seba */
+}
+
+.kontaktny-formular label {
+    text-align: left; /* Popisky vľavo */
+    margin-top: 10px; /* Miesto nad popisom */
+    margin-bottom: 5px; /* Miesto pod popisom */
+    font-weight: bold; /* Tučný text */
+    color: #ffffff;
+}
+
+.kontaktny-formular input,
+.kontaktny-formular textarea {
+    padding: 10px; /* Vnútri políčok vzduch */
+    border: 1px solid #ddd; /* Okraj políčka */
+    border-radius: 4px; /* Zaoblené rohy políčka */
+    margin-bottom: 15px; /* Miesto pod políčkom */
+    width: auto; /* Automatická šírka */
+}
+
+.kontaktny-formular input:focus,
+.kontaktny-formular textarea:focus {
+    border-color: #ffffff; /* Modrý okraj po kliknutí */
+    outline: none; /* Zruší iný obrys */
+}
+
+.kontaktny-formular textarea {
+    resize: vertical; /* Môžeš meniť výšku textového poľa */
+}
+
+.kontaktny-formular button {
+    background-color: #2b2b2b; /* Modré tlačidlo */
+    color: white; /* Biely text na tlačidle */
+    padding: 10px 15px; /* Vzduch okolo textu na tlačidle */
+    border: none; /* Žiadny okraj */
+    border-radius: 5px; /* Zaoblené rohy tlačidla */
+    cursor: pointer; /* Zmení kurzor na ručičku */
+    font-size: 1.1em; /* Väčšie písmo */
+    transition: background-color 0.2s ease; /* Jemná zmena farby */
+}
+
+.kontaktny-formular button:hover {
+    background-color: #3c8b49; /* Stmavne po prejdení myšou */
+}
+
+
+
+/* Toto je pre mobily, od 320px do 600px šírky */
+@media only screen and (min-width: 320px) and (max-width: 600px) {
+
+    body {
+        /* Toto necháme tak, ako si mal, lebo to je dobré pre celú stránku */
+        font-family: "Hanken Grotesk", serif;
+        text-align: center;
+        /* padding: auto; - toto odstránime, môže robiť problémy s vycentrovaním */
+        background: linear-gradient(to bottom right, rgb(23, 57, 43), rgb(7, 93, 55), rgb(7, 93, 55), rgb(30, 46, 41), rgb(30, 46, 41));
+        min-height: 100vh;
+        color: white;
+        display: flex; /* Použijeme flexbox pre jednoduchšie centrovanie obsahu */
+        flex-direction: column; /* Položky pod sebou */
+        justify-content: center; /* Vycentruje vertikálne */
+        align-items: center; /* Vycentruje horizontálne */
+        padding: 20px; /* Pridáme nejaký malý okraj, aby to nebolo nalepené na kraje */
+        box-sizing: border-box; /* Aby padding nerobil problémy so šírkou */
+    }
+
+    /* Hlavička - na mobile ju vycentrujeme a nebude v rohu */
+    header {
+        grid-column: unset; /* Zrušíme nastavenie gridu */
+        grid-row: unset; /* Zrušíme nastavenie gridu */
+        width: 100%; /* Rozšírime ju na celú šírku */
+        text-align: center; /* Text v strede */
+        margin-bottom: 20px; /* Miesto pod hlavičkou */
+    }
+
+    /* Hlavný obsah - vycentrujeme ho a upravíme šírku */
+    main {
+        margin: 0 auto; /* Vycentrujeme horizontálne */
+        margin-top: 20px; /* Malý odstup od vrchu */
+        width: 100%; /* Na mobile bude hlavný obsah na celú šírku */
+        max-width: 550px; /* Aby nebol príliš široký na väčších mobiloch */
+        padding: 0 10px; /* Malý okraj zľava a sprava */
+        box-sizing: border-box;
+    }
+
+    /* Kontaktná sekcia - vycentrujeme a zmenšíme padding */
+    #kontakt {
+        padding: 25px 15px; /* Menej vzduchu na mobile */
+        border-radius: 10px; /* Trochu menšie zaoblenie */
+        width: 100%; /* Celá šírka */
+        box-sizing: border-box;
+    }
+
+    #kontakt h2 {
+        font-size: 1.8em; /* Trochu menší nadpis */
+        margin-bottom: 10px;
+    }
+
+    #kontakt p {
+        font-size: 0.95em; /* Trochu menší text */
+        margin-bottom: 20px;
+    }
+
+    /* Kontaktný formulár - vycentrujeme ho, aby bol vždy v strede sekcie */
+    .kontaktny-formular {
+        max-width: 300px; /* Ešte menšia šírka formulára, aby sa zmestil */
+        margin: 0 auto; /* Vycentrujeme ho v rámci #kontakt */
+        padding: 15px; /* Menej vzduchu vo vnútri formulára */
+    }
+
+    .kontaktny-formular label {
+        font-size: 0.9em; /* Menšie popisky */
+        margin-top: 8px;
+        margin-bottom: 3px;
+    }
+
+    .kontaktny-formular input,
+    .kontaktny-formular textarea {
+        padding: 8px; /* Menej vzduchu v políčkach */
+        margin-bottom: 12px;
+        font-size: 0.9em;
+    }
+
+    .kontaktny-formular button {
+        padding: 10px 15px;
+        font-size: 1em;
+    }
+}
+
+
+
+
+    
+
+
+
+
+
+
+

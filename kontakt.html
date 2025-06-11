@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" type="text/css" href="kontakt.css" />
+    <title>S.N stranka</title>
+</head>
+
+    <header>
+        <div class="dropdown" style="float:right;">
+            <button class="dropbtn"><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 6H6m12 4H6m12 4H6m12 4H6"/></svg></button>
+            <div class="dropdown-content">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutme.html">O mne</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+            </div>
+          </div>
+    </header>
+    
+<body>
+
+<main>
+<section id="kontakt">
+    <h2>Napíš mi!</h2>
+    <p>Máš otázku? Pošli mi správu:</p>
+
+    <form action="mailto:tvoj.email@example.com" method="POST" enctype="text/plain" class="kontaktny-formular">
+        <label for="meno">Tvoje meno:</label>
+        <input type="text" id="meno" name="Meno" required>
+
+        <label for="email">Tvoj e-mail:</label>
+        <input type="email" id="email" name="Email" required>
+
+        <label for="sprava">Tvoja správa:</label>
+        <textarea id="sprava" name="Sprava" rows="5" required></textarea>
+
+        <button type="submit">Odoslať správu</button>
+    </form>
+</section>
+</main>
+    <footer>
+        <p>Šimon Novák | copyright © 2024 </p>
+    </footer>
+</body>
+</html>
